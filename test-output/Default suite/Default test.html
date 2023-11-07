@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 21 11:12:56 IST 2022</td>
+<td>Started on:</td><td>Tue Nov 07 14:20:19 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18973 ms)</td>
+<tr><td>Total time:</td><td>329 seconds (329738 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberOption.TestNgRunner$TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOption.TestNgRunner$TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enterprise Seller pannel login", "Title of your feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
-	at PageObject.LoginPage.enterphNum(LoginPage.java:18)
-	at StepDefinition.LoginStepDefinition.login_with_phonenumber_something_and_password_something(LoginStepDefinition.java:31)
-	at ?.Login with PhoneNumber &quot;7353388791&quot; and password &quot;Hanamant@1996&quot;(file:///G:/WorkspaceNew/CucumberFramework/src/test/java/FeatureFile/LoginSellerApp.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1589968642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1589968642'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
-	at PageObject.LoginPage.enterphNum(LoginPage.java:18)
-	at StepDefinition.LoginStepDefinition.login_with_phonenumber_something_and_password_something(LoginStepDefinition.java:31)
-	at ?.Login with PhoneNumber &quot;7353388791&quot; and password &quot;Hanamant@1996&quot;(file:///G:/WorkspaceNew/CucumberFramework/src/test/java/FeatureFile/LoginSellerApp.feature:9)
+<td title='CucumberTestNg.TestNgRunner$TestNgtestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberTestNg.TestNgRunner$TestNgtestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the application with valid credentials successfully and validate Login page", "Title of your feature"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-bb-handler=&quot;ok&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 133). Other element would receive the click: &lt;button data-bb-handler=&quot;ok&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-V13P0FR&apos;, ip: &apos;192.168.0.196&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fb515d68d851fe12b775078871b6015, clickElement {id=0854AA14021112A6343636CD03355401_element_11010}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62420/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5fb515d68d851fe12b775078871b6015)] -&gt; xpath: //*[text()=&quot;OK&quot;]]
+Session ID: 5fb515d68d851fe12b775078871b6015
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at PageObject.LoginSnoc.click_Ok(LoginSnoc.java:203)
+	at StepDefinition.LoginSnocStepdefinition.click_on_view_order_option(LoginSnocStepdefinition.java:105)
+	at ✽.click on View Order Option(file:///C:/Users/admin/eclipse-workspace/DeliveryAutomation/src/test/java/featurefile/LoginSnock.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace870369046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace870369046'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-bb-handler=&quot;ok&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 133). Other element would receive the click: &lt;button data-bb-handler=&quot;ok&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-V13P0FR&apos;, ip: &apos;192.168.0.196&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fb515d68d851fe12b775078871b6015, clickElement {id=0854AA14021112A6343636CD03355401_element_11010}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62420/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5fb515d68d851fe12b775078871b6015)] -&gt; xpath: //*[text()=&quot;OK&quot;]]
+Session ID: 5fb515d68d851fe12b775078871b6015
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at PageObject.LoginSnoc.click_Ok(LoginSnoc.java:203)
+	at StepDefinition.LoginSnocStepdefinition.click_on_view_order_option(LoginSnocStepdefinition.java:105)
+	at ✽.click on View Order Option(file:///C:/Users/admin/eclipse-workspace/DeliveryAutomation/src/test/java/featurefile/LoginSnock.feature:13)
 </pre></div></td>
-<td>18</td>
-<td>CucumberOption.TestNgRunner$TestNGRunner@21e360a</td></tr>
+<td>328</td>
+<td>CucumberTestNg.TestNgRunner$TestNgtestRunner@33d512c1</td></tr>
 </table><p>
 </body>
 </html>
